@@ -9,6 +9,10 @@ cd lasik
 code .
 ```
 
+Notes
+---
+- Icon should be 128x128 PNG
+
 
 Links
 ---
