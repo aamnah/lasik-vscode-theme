@@ -134,7 +134,6 @@ And note that you can backslash-escape any punctuation characters
 which you wish to be displayed literally, ex.: \`foo\`, \*bar\*, etc.
 
 
-
 ## Horizontal Rules
 
 ___
@@ -142,8 +141,6 @@ ___
 ---
 
 ***
-
-
 
 
 ## Blockquotes
@@ -184,19 +181,20 @@ Start numbering with offset:
 
 ## Tables
 
-| Option | Description |
-| ------ | ----------- |
+| Option | Description                                                               |
+| ------ | ------------------------------------------------------------------------- |
 | data   | path to data files to supply the data that will be passed into templates. |
-| engine | engine to be used for processing templates. Handlebars is the default. |
-| ext    | extension to be used for dest files. |
+| engine | engine to be used for processing templates. Handlebars is the default.    |
+| ext    | extension to be used for dest files.                                      |
 
 Right aligned columns
 
-| Option | Description |
-| ------:| -----------:|
-| data   | path to data files to supply the data that will be passed into templates. |
-| engine | engine to be used for processing templates. Handlebars is the default. |
-| ext    | extension to be used for dest files. |
+| Option |                                                               Description |
+| -----: | ------------------------------------------------------------------------: |
+|   data | path to data files to supply the data that will be passed into templates. |
+| engine |    engine to be used for processing templates. Handlebars is the default. |
+|    ext |                                      extension to be used for dest files. |
+
 
 ## Links
 
@@ -204,10 +202,12 @@ Right aligned columns
 
 [link with title](http://nodeca.github.io/pica/demo/ "title text!")
 
-Autoconverted link https://github.com/nodeca/pica 
+Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
 
-- [link text](http://dev.nodeca.com)
-- [link with title](http://nodeca.github.io/pica/demo/ "title text!")
+- [Anchor text](http://dev.nodeca.com)
+- ![Minion - alt text for image link](https://octodex.github.com/images/minion.png)
+- [Anchor text for reference link][id]
+- ![Alt text for image with reference link][id]
 
 ## Images
 
@@ -221,6 +221,8 @@ Like links, Images also have a footnote style syntax
 With a reference later in the document defining the URL location:
 
 [id]: https://octodex.github.com/images/dojocat.jpg  "The Dojocat"
+
+
 
 
 ### Footnotes
