@@ -1260,6 +1260,12 @@
       }
     },
     {
+      "scope": "variable.parameter",
+      "settings": {
+        "foreground": "#fc7e9be6"
+      }
+    },
+    {
       "scope": ["meta.object-literal.key"],
       "settings": {
         "foreground": "#9CDCFE"
@@ -1667,16 +1673,7 @@
         "foreground": "#2d456b"
       }
     },
-    {
-      "scope": [
-        "punctuation.definition.constant.markdown",
-        "punctuation.separator.key-value.markdown",
-        "meta.link.reference.def.markdown"
-      ],
-      "settings": {
-        "foreground": "#8da6ce"
-      }
-    },
+
     {
       "scope": [
         "punctuation.definition.metadata.markdown",
@@ -1693,12 +1690,7 @@
         "foreground": "#a13535"
       }
     },
-    {
-      "scope": "constant.other.reference.link.markdown",
-      "settings": {
-        "foreground": "#5f8387"
-      }
-    },
+
     {
       "scope": [
         "markup.underline.link.markdown",
@@ -1730,7 +1722,99 @@
         "foreground": "#FAB795B3",
         "fontStyle": "italic"
       }
+    },
+    {
+      "name": "[MARKDOWN] - Color for punctuations",
+      "scope": ["punctuation.definition.heading.markdown"],
+      "settings": {
+        "foreground": "#2D456B"
+      }
+    },
+    {
+      "name": "[MARKDOWN] - Color for heading punctuation #",
+      "scope": ["punctuation.definition.heading.markdown"],
+      "settings": {
+        "foreground": "#e956784a"
+      }
+    },
+    {
+      "name": "[MARKDOWN] - Color for italic punctuation _ *",
+      "scope": ["punctuation.definition.italic.markdown"],
+      "settings": {
+        "foreground": "#25afbc4e"
+      }
+    },
+    {
+      "name": "[MARKDOWN] - Color for bold punctuation __ **",
+      "scope": ["punctuation.definition.bold.markdown"],
+      "settings": {
+        "foreground": "#b877db55"
+      }
+    },
+    {
+      "name": "[MARKDOWN] - Color for inline code punctuation `",
+      "scope": ["punctuation.definition.raw.markdown"],
+      "settings": {
+        "foreground": "#f0938357"
+      }
+    },
+    {
+      "name": "[MARKDOWN] - Color for strikethrough punctuation ~~",
+      "scope": ["punctuation.definition.strikethrough.markdown"],
+      "settings": {
+        "foreground": "#61646d5b"
+      }
+    },
+    {
+      "name": "[MARKDOWN] - Color for Blockquote`",
+      "scope": ["markup.quote.markdown"],
+      "settings": {
+        "foreground": "#6A9955FF"
+      }
+    },
+    {
+      "name": "[MARKDOWN] - Color for blockquote punctuation >`",
+      "scope": ["punctuation.definition.quote.begin.markdown"],
+      "settings": {
+        "foreground": "#6b99559a"
+      }
+    },
+    {
+      "name": "[MARKDOWN] - Color for link punctuation ![]()",
+      "scope": [
+        "punctuation.definition.metadata.markdown",
+        "punctuation.definition.link.description.begin.markdown",
+        "punctuation.definition.link.description.end.markdown",
+        "punctuation.definition.link.title.begin.markdown",
+        "punctuation.definition.link.title.end.markdown",
+        "punctuation.definition.string.begin.markdown",
+        "punctuation.definition.string.end.markdown"
+      ],
+      "settings": { "foreground": "#fab7953d" }
+    },
+    {
+      "name": "[MARKDOWN] - Color for reference link ID",
+      "scope": "constant.other.reference.link.markdown",
+      "settings": {
+        "foreground": "#5f8387"
+      }
+    },
+    {
+      "name": "[MARKDOWN] - Color for reference link punctuation ![]()",
+      "scope": [
+        "punctuation.definition.constant.markdown",
+        "punctuation.definition.constant.begin.markdown",
+        "punctuation.definition.constant.end.markdown",
+        "punctuation.separator.key-value.markdown",
+        "meta.link.reference.def.markdown"
+      ],
+      "settings": {
+        "foreground": "#5f838756"
+      }
     }
   ]
 
 }
+
+
+
