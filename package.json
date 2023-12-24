@@ -1,7 +1,9 @@
 {
   "name": "lasik",
   "displayName": "Lasik",
-  "description": "A dark, easy on the eyes theme that has decent contrast for coders that have sensitive eyes",
+  "description": "A dark, easy on the eyes theme that has decent contrast for coders with sensitive eyes",
+  "publisher": "AmnaAkram",
+  "repository": "https://github.com/aamnah/lasik",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.85.0"
@@ -15,6 +17,18 @@
         "label": "Lasik",
         "uiTheme": "vs-dark",
         "path": "./themes/Lasik-color-theme.json"
+      }
+    ],
+    "colors": [
+      {
+        "id": "lasik.dark",
+        "description": "Dark color for editor/sidebar etc. background.",
+        "defaults": {
+          "dark": "#01030a",
+          "light": "editor.background",
+          "highContrast": "editor.background",
+          "highContrastLight": "editor.background"
+        }
       }
     ]
   }
