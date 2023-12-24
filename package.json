@@ -1,0 +1,21 @@
+{
+  "name": "lasik",
+  "displayName": "Lasik",
+  "description": "A dark, easy on the eyes theme that has decent contrast for coders that have sensitive eyes",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Lasik",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Lasik-color-theme.json"
+      }
+    ]
+  }
+}
