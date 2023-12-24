@@ -4,7 +4,7 @@
   "description": "A dark, easy on the eyes theme that has decent contrast for coders with sensitive eyes",
   "publisher": "AmnaAkram",
   "repository": "https://github.com/aamnah/lasik",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.85.0"
   },
