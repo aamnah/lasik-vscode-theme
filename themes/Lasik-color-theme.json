@@ -1724,10 +1724,17 @@
       }
     },
     {
-      "name": "[MARKDOWN] - Color for punctuations",
-      "scope": ["punctuation.definition.heading.markdown"],
+      "name": "[MARKDOWN] - Color for code block punctuation ``` (everything else is individually targeted)",
+      "scope": "punctuation.definition.markdown",
       "settings": {
-        "foreground": "#2D456B"
+        "foreground": "#f0938357"
+      }
+    },
+		{
+      "name": "[MARKDOWN] - Color for inline code punctuation `",
+      "scope": ["punctuation.definition.raw.markdown"],
+      "settings": {
+        "foreground": "#f0938357"
       }
     },
     {
@@ -1750,14 +1757,7 @@
       "settings": {
         "foreground": "#b877db55"
       }
-    },
-    {
-      "name": "[MARKDOWN] - Color for inline code punctuation `",
-      "scope": ["punctuation.definition.raw.markdown"],
-      "settings": {
-        "foreground": "#f0938357"
-      }
-    },
+    }
     {
       "name": "[MARKDOWN] - Color for strikethrough punctuation ~~",
       "scope": ["punctuation.definition.strikethrough.markdown"],
