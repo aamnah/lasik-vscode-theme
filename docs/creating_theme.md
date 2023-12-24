@@ -11,7 +11,7 @@ code .
 
 Notes
 ---
-- Icon should be 128x128 PNG
+- Icon should be at least 128x128 PNG (256x256 for Retina screens).
 
 
 Links
