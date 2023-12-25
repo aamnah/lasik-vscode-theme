@@ -23,6 +23,12 @@ ext install AmnaAkram.lasik
 
 ![Markdown Tables](./images/markdown-tables.png)
 
+## Bash
+
+Attention was paid to making arithmetic evaluation, command evaluation, variables inside strings, and command names more obvious
+
+![Bash sample](./images/bash-sample.png)
+
 ## Dimmed punctuation
 
 Some elements have been dimmed (for example quotes around strings and property names in JSON and HTML, or punctuation around Markdown elements), to give more emphasis to the actual _keys_ and _values_ and not punctuation marks. The assumption here is that you already have a linter or syntax highlighting good enough to point out a missing punctuation and you don't necessarily need to see them prominently.
