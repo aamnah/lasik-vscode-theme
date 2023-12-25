@@ -6,6 +6,7 @@ The theme was developed for personal use by a developer who writes a lot of Reac
 ![Python sample](./images/python-sample.png)
 
 ![Markdown sample](./images/markdown-sample.png)
+
 # Markdown
 
 ![Basic Markdown](./images/markdown-basics.png)
@@ -13,6 +14,7 @@ The theme was developed for personal use by a developer who writes a lot of Reac
 ![Markdown Tables](./images/markdown-tables.png)
 
 # Dimmed punctuation
+
 Some elements have been dimmed (for example quotes around strings and property names in JSON and HTML, or punctuation around Markdown elements), to give more emphasis to the actual _keys_ and _values_ and not punctuation marks. The assumption here is that you already have a linter or syntax highlighting good enough to point out a missing punctuation and you don't necessarily need to see them prominently.
 
 This is more readable:
