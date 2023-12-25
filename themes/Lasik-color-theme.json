@@ -1837,6 +1837,13 @@
       "settings": {
         "foreground": "#5dc07edf"
       }
+    },
+    {
+      "name": "[BASH] Parameter Expansion",
+      "scope": ["meta.parameter-expansion"],
+      "settings": {
+        "foreground": "#FC7E9BE6"
+      }
     }
   ]
 }
