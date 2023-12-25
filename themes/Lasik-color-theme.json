@@ -1730,7 +1730,7 @@
         "foreground": "#f0938357"
       }
     },
-		{
+    {
       "name": "[MARKDOWN] - Color for inline code punctuation `",
       "scope": ["punctuation.definition.raw.markdown"],
       "settings": {
@@ -1757,7 +1757,7 @@
       "settings": {
         "foreground": "#b877db55"
       }
-    }
+    },
     {
       "name": "[MARKDOWN] - Color for strikethrough punctuation ~~",
       "scope": ["punctuation.definition.strikethrough.markdown"],
