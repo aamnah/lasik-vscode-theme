@@ -846,7 +846,8 @@
     {
       "scope": "comment",
       "settings": {
-        "foreground": "#6A9955"
+        "foreground": "#3c476c",
+        "fontStyle": "italic"
       }
     },
     {
@@ -1327,13 +1328,6 @@
       "scope": "entity.name.label",
       "settings": {
         "foreground": "#C8C8C8"
-      }
-    },
-    {
-      "scope": "comment",
-      "settings": {
-        "foreground": "#61646D",
-        "fontStyle": "italic"
       }
     },
     {
@@ -1835,7 +1829,7 @@
       "name": "[BASH] Command names",
       "scope": ["entity.name.command.shell"],
       "settings": {
-        "foreground": "#5dc07edf"
+        "foreground": "#4EC9B0"
       }
     },
     {
