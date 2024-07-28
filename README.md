@@ -3,6 +3,10 @@ A dark, easy on the eyes theme for Visual Studio Code that has decent contrast f
 
 The theme was developed for personal use by a developer who writes a lot of React, TypeScript, Python, Sass/CSS, HTML and Markdown files.
 
+See other Lasik ports
+
+- [Konsole](https://github.com/aamnah/lasik-konsole-theme)
+
 **Installation**
 
 Launch VS Code Quick Open (`Ctrl+P`), paste the following command, and press enter.
