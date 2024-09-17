@@ -1,3 +1,9 @@
 {
-	"deno.enable": true
+  "deno.enable": true,
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#BB3050",
+    "titleBar.activeForeground": "#D1DAFA",
+    "titleBar.inactiveBackground": "#BB6579",
+    "titleBar.inactiveForeground": "#E8ECFD"
+  }
 }
