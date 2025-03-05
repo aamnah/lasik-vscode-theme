@@ -1,0 +1,203 @@
+<!doctype html PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<!--
+*        Sample comment
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Web App that utilizes the TMDB API to get latest movies"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000411">
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ed254e">
+    <meta name="msapplication-TileColor" content="#000411">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="apple-touch-icon" href="/logo192.png" />
+
+    <link rel="manifest" href="/manifest.json" />
+
+    <title>Movies</title>
+  </head>
+  <body>
+    
+    <div id="root">
+      <h1>Sample HTML</h1>
+    <p>
+      <br /><strong><img border="0" height="12" src="images/hg.gif" width="18" /> What is
+        IntelliJ&nbsp;IDEA? &#x00B7; &Alpha; </strong><br /><br />
+    </p>      
+    <p>A lead or excerpt should go here. two or three lines are good. About 320 chars is also fine.</p>
+    <h4>Heading 4</h4>
+<p>Officiis cumque, voluptates distinctio fuga, quidem illo aliquid culpa a facere ipsa porro <em>tempora mollitia</em>, voluptatibus nihil qui <strong>dolorum quis fugit tempore quos voluptates</strong>, laboriosam ab ea non cupiditate ratione <a href="#">libero</a>. Exercitationem error doloribus veniam ab soluta molestiae quas, quae quos? <code>Officiis cumque</code>, voluptates distinctio fuga, quidem illo aliquid culpa a facere ipsa porro tempora mollitia, voluptatibus nihil qui laboriosam ab ea non cupiditate ratione <kbd>Ctrl</kbd>+<kbd>I</kbd>.</p>
+<!--more-->
+
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+
+<blockquote>
+I have loved the stars too fondly to be fearful of the night.<br>
+<cite>Sarah Williams</cite>
+</blockquote>
+
+<p><strong>This text is bold.</strong></p>
+<p><em>This text is italic.</em></p>
+<p><a href="#">This is a link</a>.</p>
+
+<h4>Code</h4>
+<pre><code>
+# Setup a red prompt for root and a green one for normal users.
+NORMAL="\[\e[0m\]"
+RED="\[\e[0;31m\]"
+GREEN="\[\e[0;32m\]"
+if [[ $EUID == 0 ]] ; then
+  PS1="$NORMAL\w $RED\$ $NORMAL"
+else
+  PS1="$NORMAL\w $GREEN\$ $NORMAL"
+fi
+</code></pre>
+
+<h4>Unordered List</h4>
+<ul>
+  <li>Item1</li>
+  <li>Item2</li>
+  <li>Item3</li>
+</ul>
+
+<h4>Ordered List</h4>
+<ol>
+  <li>item1</li>
+  <li>item2</li>
+  <li>item3</li>
+</ol>
+
+
+<pre><code>
+// comment
+var foo = function (bar) {
+  return bar++;
+};
+
+console.log(foo(5));
+</pre></code>
+
+<form action="#" method="post" id="demoForm">
+<h3>Form Elements and (most of the) Input Types</h3>
+    <label for="progress-bar">Progress</label>
+    <progress value="75" max="100" name="progress-bar"></progress>
+		
+    <fieldset>  
+     <legend>Account Info</legend>
+      <label for="name">Name </label>
+      <input type="name" id="name">
+      <label for="email">Email </label>
+      <input type="email" id="email">
+      <label for="password">Password </label>
+      <input type="password" id="password" maxlength="32"> 
+      <input type="hidden" vaue="hidden">   
+    </fieldset>
+
+    <fieldset>
+     <legend>Order info</legend>
+      <label for="size">Choose your size (simple select)</label>
+      <select id="size">
+        <option value="s">Small</option>
+        <option value="m">Medium</option>
+        <option value="l">Large</option>
+        <option value="xl">Extra Large</option>
+      </select>
+      <input type="radio" id="radio"><label for="radio">Radio</label>  
+    </fieldset>
+
+    <fieldset>
+      <legend>Buttons</legend>
+      <input type="button" value="Input Button">
+      <input type="submit">
+      <input type="reset"> 
+      <button name="click-me">Button</button>
+      <button type="submit" name="submit" value="foo">Button Submit</button>            
+    </fieldset>
+
+    <fieldset>
+      <legend>Radio, Select and Checkboxes</legend>
+      <label for="size">Select</label>
+      <select id="size">
+        <option value="s">Small</option>
+        <option value="m">Medium</option>
+        <option value="l">Large</option>
+        <option value="xl">Extra Large</option>
+      </select>
+
+      <input type="checkbox" value="cb1" id="cb1"><label for="cb1">checkbox 1</label>
+      <input type="checkbox" value="cb2" id="cb2"><label for="cb2">checkbox 2</label>
+
+      <input type="radio" id="radio2"><label for="radio2">Radio</label> 
+      <input type="radio" id="radio3"><label for="radio3">Radio</label> 
+      <input type="radio" id="radio4"><label for="radio4">Radio</label>  
+    </fieldset>
+
+    <fieldset>
+      <legend>Misc. Types (9)</legend>
+
+      <label for="color">Color</label>
+      <input type="color" id="color">
+
+      <label for="range">range</label>
+      <input type="range" min="0" max="100">     
+
+      <label for="search">search</label>
+      <input type="search">
+
+      <label for="file">File</label>
+      <input type="file"> 
+
+      <label for="number">number</label>
+      <input type="number">  
+
+      <label for="tel">tel</label>
+      <input type="tel">
+
+      <label for="time">time</label>
+      <input type="time"> 
+
+      <label for="url">url</label>
+      <input type="url">  
+
+      <label for="week">week</label>
+      <input type="week">
+    </fieldset>
+
+    <fieldset>
+      <legend>Time &amp; Date (5)</legend>
+      <label for="date">date</label>
+      <input type="date">     
+
+      <label for="month">month</label>
+      <input type="month">
+
+      <label for="time">time</label>
+      <input type="time"> 
+
+      <label for="week">week</label>
+      <input type="week">  
+
+      <label for="datetime-local">datetime-local</label>
+      <input type="datetime-local">
+    </fieldset>	
+	</form>
+    </div>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+  const foo = "123";
+</script>
+  </body>
+</html>
