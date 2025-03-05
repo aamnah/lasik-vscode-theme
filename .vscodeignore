@@ -4,3 +4,7 @@
 vsc-extension-quickstart.md
 demo/
 src/
+
+.gitmodules
+deno.lock
+deno.json

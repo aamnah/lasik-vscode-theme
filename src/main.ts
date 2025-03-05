@@ -12,7 +12,6 @@ export const theme = {
   tokenColors: [...TOKENS, ...MARKDOWN_TOKENS, ...BASH_TOKENS, ...JSON_TOKENS],
 }
 
-await Deno.writeTextFile(
-  "../themes/Lasik-color-theme.json",
-  JSON.stringify(theme)
-)
+// the file path is relative to the project root
+// the current project root is outside src/
+await Deno.writeTextFile("themes/Lasik-color-theme.json", JSON.stringify(theme))
