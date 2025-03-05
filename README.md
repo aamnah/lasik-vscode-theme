@@ -15,6 +15,8 @@ Launch VS Code Quick Open (`Ctrl+P`), paste the following command, and press ent
 ext install AmnaAkram.lasik
 ```
 
+Activate the theme: _Code > Preferences > Color Theme > **Lasik**_
+
 ![Screenshot](./images/screenshot.png)
 
 ## Python
