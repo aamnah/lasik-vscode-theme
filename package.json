@@ -2,7 +2,7 @@
   "name": "lasik",
   "displayName": "Lasik Super Dark",
   "description": "A dark, easy on the eyes theme that has decent contrast for coders with sensitive eyes",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "publisher": "AmnaAkram",
   "homepage": "https://github.com/aamnah/lasik/blob/main/README.md",
   "repository": {
@@ -17,7 +17,7 @@
   },
   "icon": "images/icon.png",
   "galleryBanner": {
-    "color": "#000000",
+    "color": "#01030a",
     "theme": "dark"
   },
   "engines": {
@@ -26,6 +26,10 @@
   "categories": [
     "Themes",
     "Programming Languages"
+  ],
+  "keywords": [
+    "Theme",
+    "Dark Theme"
   ],
   "contributes": {
     "themes": [
@@ -47,5 +51,8 @@
         }
       }
     ]
+  },
+  "scripts": {
+    "vscode:prepublish": "deno task build"
   }
 }
