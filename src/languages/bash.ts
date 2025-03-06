@@ -1,9 +1,19 @@
+import { PALETTE } from "../colors.ts"
+import { alpha, opaqueHex } from "../utils.ts"
+
+const BASH_COLORS = {
+  COMMAND_NAME: PALETTE.TURQUOISE,
+  PUNCTUATION_COMMAND_EVALUATION: PALETTE.YELLOW,
+  PUNCTUATION_ARITHMETIC_EVALUATION: PALETTE.SAGE,
+  PUNCTUATION_VARIABLES: opaqueHex(alpha(PALETTE.CORAL, 0.45)),
+}
+
 export const BASH_TOKENS = [
   {
     name: "[BASH] Punctuation: ${Variable}",
     scope: ["punctuation.definition.variable.shell"],
     settings: {
-      foreground: "#E9567870",
+      foreground: BASH_COLORS.PUNCTUATION_VARIABLES,
     },
   },
   {
@@ -13,7 +23,7 @@ export const BASH_TOKENS = [
       "punctuation.definition.evaluation.arithmetic.end.shell",
     ],
     settings: {
-      foreground: "#B5CEA8",
+      foreground: BASH_COLORS.PUNCTUATION_ARITHMETIC_EVALUATION,
     },
   },
   {
@@ -23,14 +33,14 @@ export const BASH_TOKENS = [
       "punctuation.definition.evaluation.parens.end.shell",
     ],
     settings: {
-      foreground: "#F9C859",
+      foreground: BASH_COLORS.PUNCTUATION_COMMAND_EVALUATION,
     },
   },
   {
     name: "[BASH] Command names",
     scope: ["entity.name.command.shell"],
     settings: {
-      foreground: "#4EC9B0",
+      foreground: BASH_COLORS.COMMAND_NAME,
     },
   },
   {

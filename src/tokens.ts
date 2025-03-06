@@ -1,16 +1,5 @@
 export const TOKENS = [
   {
-    scope: [
-      "meta.embedded",
-      "source.groovy.embedded",
-      "string meta.image.inline.markdown",
-      "variable.legacy.builtin.python",
-    ],
-    settings: {
-      foreground: "#D4D4D4",
-    },
-  },
-  {
     scope: "emphasis",
     settings: {
       fontStyle: "italic",
@@ -22,6 +11,18 @@ export const TOKENS = [
       fontStyle: "bold",
     },
   },
+  {
+    scope: [
+      "meta.embedded",
+      "source.groovy.embedded",
+      "string meta.image.inline.markdown",
+      "variable.legacy.builtin.python",
+    ],
+    settings: {
+      foreground: "#D4D4D4",
+    },
+  },
+
   {
     scope: "header",
     settings: {

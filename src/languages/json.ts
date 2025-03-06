@@ -1,3 +1,11 @@
+import { PALETTE } from "../colors.ts"
+import { alpha, opaqueHex } from "../utils.ts"
+
+const JSON_COLORS = {
+  PUNCTUATION_KEYS: opaqueHex(alpha(PALETTE.CORAL, 0.35)),
+  PUNCTUATION_VALUES: opaqueHex(alpha(PALETTE.PEACH, 0.35)),
+}
+
 export const JSON_TOKENS = [
   {
     name: "[JSON] Punctuation: Quoted Strings - Keys",
@@ -6,7 +14,7 @@ export const JSON_TOKENS = [
       "punctuation.support.type.property-name.end.json",
     ],
     settings: {
-      foreground: "#E9567850",
+      foreground: JSON_COLORS.PUNCTUATION_KEYS,
     },
   },
   {
@@ -16,7 +24,7 @@ export const JSON_TOKENS = [
       "punctuation.definition.string.end.json",
     ],
     settings: {
-      foreground: "#FAB79550",
+      foreground: JSON_COLORS.PUNCTUATION_VALUES,
     },
   },
 ]

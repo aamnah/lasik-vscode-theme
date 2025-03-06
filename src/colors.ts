@@ -1,6 +1,14 @@
-const PALETTE = {
+export const PALETTE = {
   OBSIDIAN: "#01030a",
+  CORAL: "#E95678",
+  LAVENDER: "#B877DB",
+  CYAN: "#25B0BC",
+  TURQUOISE: "#4EC9B0",
+  YELLOW: "#F9C859",
+  SAGE: "#B5CEA8",
+  PEACH: "#FAB795"
 }
+
 export const COLORS = {
 	"actionBar.toggledBackground": "#383a49",
     "activityBar.activeBackground": "#a8bcfc50",
