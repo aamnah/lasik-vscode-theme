@@ -20,9 +20,16 @@ export const lasikHighContrast = {
 // the file path is relative to the project root
 // the current project root is outside src/
 await Deno.writeTextFile(
-  "themes/Lasik-Flat-color-theme.json",
+  "themes/Lasik-color-theme.json",
   JSON.stringify(lasikFlat)
 )
+
+// // the file path is relative to the project root
+// // the current project root is outside src/
+// await Deno.writeTextFile(
+//   "themes/Lasik-Flat-color-theme.json",
+//   JSON.stringify(lasikFlat)
+// )
 
 // await Deno.writeTextFile(
 //   "themes/Lasik-HighContrast-color-theme.json",
