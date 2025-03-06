@@ -1,4 +1,4 @@
-import EDITOR_COLORS from "./colors.ts"
+import EDITOR_COLORS from "./editorColors.ts"
 // alpha()
 // takes a #ffffff color and an opacity value (0-1.0) and returns hexadecimal #ffffffff value (with opacity in hexadecimal format)
 export function alpha(color: string, opacity: number) {
