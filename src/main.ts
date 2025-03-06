@@ -1,17 +1,30 @@
-import { COLORS } from "./colors.ts"
-import { TOKENS } from "./tokens.ts"
-import { MARKDOWN_TOKENS } from "./languages/markdown.ts"
-import { BASH_TOKENS } from "./languages/bash.ts"
-import { JSON_TOKENS } from "./languages/json.ts"
+import EDITOR_COLORS from "./editorColors.ts"
+import TOKEN_COLORS from "./languageTokens/index.ts"
 
-export const theme = {
+export const lasikFlat = {
   name: "Lasik",
-  $schema: "vscode://schemas/color-theme",
   type: "dark",
-  colors: COLORS,
-  tokenColors: [...TOKENS, ...MARKDOWN_TOKENS, ...BASH_TOKENS, ...JSON_TOKENS],
+  $schema: "vscode://schemas/color-theme",
+  colors: EDITOR_COLORS["DARK"],
+  tokenColors: TOKEN_COLORS["DARK"],
+}
+
+export const lasikHighContrast = {
+  name: "Lasik - High Contrast",
+  type: "dark",
+  $schema: "vscode://schemas/color-theme",
+  colors: EDITOR_COLORS["HC"],
+  tokenColors: TOKEN_COLORS["HC"],
 }
 
 // the file path is relative to the project root
 // the current project root is outside src/
-await Deno.writeTextFile("themes/Lasik-color-theme.json", JSON.stringify(theme))
+await Deno.writeTextFile(
+  "themes/Lasik-Flat-color-theme.json",
+  JSON.stringify(lasikFlat)
+)
+
+// await Deno.writeTextFile(
+//   "themes/Lasik-HighContrast-color-theme.json",
+//   JSON.stringify(lasikHighContrast)
+// )

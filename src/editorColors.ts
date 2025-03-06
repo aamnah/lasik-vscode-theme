@@ -1,26 +1,75 @@
-export const PALETTE = {
-  WHITE: "#ffffff",
-  OBSIDIAN: "#01030a",
-  CORAL: "#E95678",
-  LAVENDER: "#B877DB",
-  CYAN: "#25B0BC",
-  TURQUOISE: "#4EC9B0",
-  YELLOW: "#F9C859",
-  SAGE: "#B5CEA8",
-  PEACH: "#FAB795",
+interface Colors{  
+  WHITE: string
+  OBSIDIAN: string
+  CORAL: string
+  LAVENDER: string
+  CYAN: string
+  TURQUOISE: string
+  YELLOW: string
+  SAGE: string
+  PEACH: string
 }
 
-export const COLORS = {
-	"actionBar.toggledBackground": "#383a49",
+interface ColorPalette {
+  LIGHT: Colors
+  DARK: Colors
+  HC: Colors
+}
+
+export type ColorPaletteType = "LIGHT" | "DARK" | "HC"
+
+export const PALETTE: ColorPalette = {
+  LIGHT: {
+    WHITE: "#ffffff",
+    OBSIDIAN: "#01030a",
+    CORAL: "#E95678",
+    LAVENDER: "#B877DB",
+    CYAN: "#25B0BC",
+    TURQUOISE: "#4EC9B0",
+    YELLOW: "#F9C859",
+    SAGE: "#B5CEA8",
+    PEACH: "#FAB795",
+  },
+  DARK: {
+    WHITE: "#ffffff",
+    OBSIDIAN: "#01030a",
+    CORAL: "#E95678",
+    LAVENDER: "#B877DB",
+    CYAN: "#25B0BC",
+    TURQUOISE: "#4EC9B0",
+    YELLOW: "#F9C859",
+    SAGE: "#B5CEA8",
+    PEACH: "#FAB795",
+  },
+  HC: {
+    WHITE: "#ffffff",
+    OBSIDIAN: "#01030a",
+    CORAL: "#E95678",
+    LAVENDER: "#B877DB",
+    CYAN: "#25B0BC",
+    TURQUOISE: "#4EC9B0",
+    YELLOW: "#F9C859",
+    SAGE: "#B5CEA8",
+    PEACH: "#FAB795",
+  },
+}
+
+function generateEditorColors(type: ColorPaletteType) {
+  const COLOR = PALETTE[type]
+
+  // const SEMANTIC_COLORS = {}
+  
+  return {
+    "actionBar.toggledBackground": "#383a49",
     "activityBar.activeBackground": "#a8bcfc50",
     "activityBar.activeBorder": "#a8bcfc",
     "activityBar.activeFocusBorder": "#ff0000",
-    "activityBar.background": PALETTE.OBSIDIAN,
-    "activityBar.border": PALETTE.OBSIDIAN,
+    "activityBar.background": COLOR.OBSIDIAN,
+    "activityBar.border": COLOR.OBSIDIAN,
     "activityBar.foreground": "#a8bcfc",
     "activityBar.inactiveForeground": "#a8bcfc50",
     "activityBarBadge.background": "#a8bcfc",
-    "activityBarBadge.foreground": PALETTE.OBSIDIAN,
+    "activityBarBadge.foreground": COLOR.OBSIDIAN,
     "badge.background": "#616161",
     "badge.foreground": "#f8f8f8",
     "button.background": "#0078d4",
@@ -35,12 +84,12 @@ export const COLORS = {
     "checkbox.background": "#313131",
     "checkbox.border": "#3c3c3c",
     "debugToolBar.background": "#181818",
-    "descriptionForeground": "#9d9d9d",
+    descriptionForeground: "#9d9d9d",
     "dropdown.background": "#313131",
     "dropdown.border": "#3c3c3c",
     "dropdown.foreground": "#cccccc",
     "dropdown.listBackground": "#1f1f1f",
-    "editor.background": PALETTE.OBSIDIAN,
+    "editor.background": COLOR.OBSIDIAN,
     "editor.findMatchBackground": "#a8bcfc00",
     "editor.findMatchBorder": "#a8bcfc20",
     "editor.findMatchHighlightBackground": "#a1aed828",
@@ -55,7 +104,7 @@ export const COLORS = {
     "editor.wordHighlightBorder": "#a8bcfc20",
     "editorGroup.border": "#ffffff17",
     "editorGroupHeader.border": "#a8bcfc20",
-    "editorGroupHeader.tabsBackground": PALETTE.OBSIDIAN,
+    "editorGroupHeader.tabsBackground": COLOR.OBSIDIAN,
     "editorGroupHeader.tabsBorder": "#a8bcfc20",
     "editorGutter.addedBackground": "#2ea043",
     "editorGutter.deletedBackground": "#f85149",
@@ -66,9 +115,9 @@ export const COLORS = {
     "editorLineNumber.foreground": "#a8bcfc50",
     "editorOverviewRuler.border": "#010409",
     "editorWidget.background": "#202020",
-    "errorForeground": "#f85149",
-    "focusBorder": "#0078d4",
-    "foreground": "#cccccc",
+    errorForeground: "#f85149",
+    focusBorder: "#0078d4",
+    foreground: "#cccccc",
     "icon.foreground": "#a8bcfc",
     "input.background": "#313131",
     "input.border": "#3c3c3c",
@@ -91,7 +140,7 @@ export const COLORS = {
     "notifications.background": "#1f1f1f",
     "notifications.border": "#2b2b2b",
     "notifications.foreground": "#cccccc",
-    "panel.background": PALETTE.OBSIDIAN,
+    "panel.background": COLOR.OBSIDIAN,
     "panel.border": "#a8bcfc",
     "panelInput.border": "#a8bcfc55",
     "panelSection.border": "#a8bcfc55",
@@ -112,8 +161,8 @@ export const COLORS = {
     "settings.dropdownBorder": "#3c3c3c",
     "settings.headerForeground": "#ffffff",
     "settings.modifiedItemIndicator": "#bb800966",
-    "sideBar.background": PALETTE.OBSIDIAN,
-    "sideBar.border": PALETTE.OBSIDIAN,
+    "sideBar.background": COLOR.OBSIDIAN,
+    "sideBar.border": COLOR.OBSIDIAN,
     "sideBar.foreground": "#cccccc",
     "sideBarSectionHeader.background": "#a8bcfc28",
     "sideBarSectionHeader.border": "#a8bcfc20",
@@ -136,7 +185,7 @@ export const COLORS = {
     "tab.activeForeground": "#ffffff",
     "tab.border": "#a8bcfc20",
     "tab.hoverBackground": "#1f1f1f",
-    "tab.inactiveBackground": PALETTE.OBSIDIAN,
+    "tab.inactiveBackground": COLOR.OBSIDIAN,
     "tab.inactiveForeground": "#9d9d9d",
     "tab.lastPinnedBorder": "#cccccc33",
     "tab.unfocusedActiveBorder": "#1f1f1f",
@@ -160,7 +209,7 @@ export const COLORS = {
     "titleBar.inactiveForeground": "#8f93a2",
     "welcomePage.progress.foreground": "#0078d4",
     "welcomePage.tileBackground": "#2b2b2b",
-    "widget.border": "#313131"
+    "widget.border": "#313131",
     //"activityBar.dropBorder": "#a8bcfc",
     //"activityBarTop.activeBorder": "#e7e7e7",
     //"activityBarTop.dropBorder": "#e7e7e7",
@@ -170,7 +219,7 @@ export const COLORS = {
     //"banner.foreground": "#ffffff",
     //"banner.iconForeground": "#3794ff",
     //"breadcrumb.activeSelectionForeground": "#e0e0e0",
-    //"breadcrumb.background": PALETTE.OBSIDIAN,
+    //"breadcrumb.background": COLOR.OBSIDIAN,
     //"breadcrumb.focusForeground": "#e0e0e0",
     //"breadcrumb.foreground": "#cccccccc",
     //"breadcrumbPicker.background": "#202020",
@@ -242,7 +291,7 @@ export const COLORS = {
     //"diffEditor.removedLineBackground": "#ff000033",
     //"diffEditor.removedTextBackground": "#ff000033",
     //"diffEditor.unchangedCodeBackground": "#74747429",
-    //"diffEditor.unchangedRegionBackground": PALETTE.OBSIDIAN,
+    //"diffEditor.unchangedRegionBackground": COLOR.OBSIDIAN,
     //"diffEditor.unchangedRegionForeground": "#cccccc",
     //"diffEditor.unchangedRegionShadow": "#000000",
     //"disabledForeground": "#cccccc80",
@@ -295,8 +344,8 @@ export const COLORS = {
     //"editorGroup.dropBackground": "#53595d80",
     //"editorGroup.dropIntoPromptBackground": "#202020",
     //"editorGroup.dropIntoPromptForeground": "#cccccc",
-    //"editorGroupHeader.noTabsBackground": PALETTE.OBSIDIAN,
-    //"editorGutter.background": PALETTE.OBSIDIAN,
+    //"editorGroupHeader.noTabsBackground": COLOR.OBSIDIAN,
+    //"editorGutter.background": COLOR.OBSIDIAN,
     //"editorGutter.commentGlyphForeground": "#cccccc",
     //"editorGutter.commentRangeForeground": "#1b202f",
     //"editorGutter.commentUnresolvedGlyphForeground": "#cccccc",
@@ -330,7 +379,7 @@ export const COLORS = {
     //"editorLightBulbAi.foreground": "#ffcc00",
     //"editorLightBulbAutoFix.foreground": "#75beff",
     //"editorLink.activeForeground": "#4e94ce",
-    //"editorMarkerNavigation.background": PALETTE.OBSIDIAN,
+    //"editorMarkerNavigation.background": COLOR.OBSIDIAN,
     //"editorMarkerNavigationError.background": "#f14c4c",
     //"editorMarkerNavigationError.headerBackground": "#f14c4c1a",
     //"editorMarkerNavigationInfo.background": "#3794ff",
@@ -359,9 +408,9 @@ export const COLORS = {
     //"editorOverviewRuler.wordHighlightForeground": "#a0a0a0cc",
     //"editorOverviewRuler.wordHighlightStrongForeground": "#c0a0c0cc",
     //"editorOverviewRuler.wordHighlightTextForeground": "#a0a0a0cc",
-    //"editorPane.background": PALETTE.OBSIDIAN,
+    //"editorPane.background": COLOR.OBSIDIAN,
     //"editorRuler.foreground": "#5a5a5a",
-    //"editorStickyScroll.background": PALETTE.OBSIDIAN,
+    //"editorStickyScroll.background": COLOR.OBSIDIAN,
     //"editorStickyScroll.shadow": "#000000",
     //"editorStickyScrollHover.background": "#2a2d2e",
     //"editorSuggestWidget.background": "#202020",
@@ -381,7 +430,7 @@ export const COLORS = {
     //"editorWidget.border": "#454545",
     //"editorWidget.foreground": "#cccccc",
     //"extensionBadge.remoteBackground": "#a8bcfc",
-    //"extensionBadge.remoteForeground": PALETTE.OBSIDIAN,
+    //"extensionBadge.remoteForeground": COLOR.OBSIDIAN,
     //"extensionButton.background": "#0078d4",
     //"extensionButton.foreground": "#ffffff",
     //"extensionButton.hoverBackground": "#026ec1",
@@ -497,7 +546,7 @@ export const COLORS = {
     //"keybindingLabel.bottomBorder": "#44444499",
     //"keybindingTable.headerBackground": "#cccccc0a",
     //"keybindingTable.rowsBackground": "#cccccc0a",
-    //"lasik.dark": PALETTE.OBSIDIAN,
+    //"lasik.dark": COLOR.OBSIDIAN,
     //"list.activeSelectionForeground": "#ffffff",
     //"list.deemphasizedForeground": "#8c8c8c",
     //"list.dropBetweenBackground": "#a8bcfc",
@@ -551,11 +600,11 @@ export const COLORS = {
     //"multiDiffEditor.border": "#a8bcfc20",
     //"multiDiffEditor.headerBackground": "#262626",
     //"notebook.cellBorderColor": "#a8bcfc28",
-    //"notebook.cellEditorBackground": PALETTE.OBSIDIAN,
+    //"notebook.cellEditorBackground": COLOR.OBSIDIAN,
     //"notebook.cellInsertionIndicator": "#0078d4",
     //"notebook.cellStatusBarItemHoverBackground": "#ffffff26",
     //"notebook.cellToolbarSeparator": "#80808059",
-    //"notebook.editorBackground": PALETTE.OBSIDIAN,
+    //"notebook.editorBackground": COLOR.OBSIDIAN,
     //"notebook.focusedCellBorder": "#0078d4",
     //"notebook.focusedEditorBorder": "#0078d4",
     //"notebook.inactiveFocusedCellBorder": "#a8bcfc28",
@@ -577,7 +626,7 @@ export const COLORS = {
     //"notificationsWarningIcon.foreground": "#cca700",
     //"panel.dropBorder": "#cccccc",
     //"panelSectionHeader.background": "#80808033",
-    //"panelStickyScroll.background": PALETTE.OBSIDIAN,
+    //"panelStickyScroll.background": COLOR.OBSIDIAN,
     //"panelStickyScroll.shadow": "#000000",
     //"peekView.border": "#3794ff",
     //"peekViewEditorGutter.background": "#1f1f1f",
@@ -631,9 +680,9 @@ export const COLORS = {
     //"settings.textInputForeground": "#cccccc",
     //"sideBar.dropBackground": "#53595d80",
     //"sideBarActivityBarTop.border": "#a8bcfc20",
-    //"sideBarStickyScroll.background": PALETTE.OBSIDIAN,
+    //"sideBarStickyScroll.background": COLOR.OBSIDIAN,
     //"sideBarStickyScroll.shadow": "#000000",
-    //"sideBarTitle.background": PALETTE.OBSIDIAN,
+    //"sideBarTitle.background": COLOR.OBSIDIAN,
     //"sideBySideEditor.horizontalBorder": "#ffffff17",
     //"sideBySideEditor.verticalBorder": "#ffffff17",
     //"simpleFindWidget.sashBorder": "#454545",
@@ -703,7 +752,7 @@ export const COLORS = {
     //"tab.unfocusedActiveBackground": "#a8bcfc28",
     //"tab.unfocusedActiveForeground": "#ffffff80",
     //"tab.unfocusedActiveModifiedBorder": "#3399cc80",
-    //"tab.unfocusedInactiveBackground": PALETTE.OBSIDIAN,
+    //"tab.unfocusedInactiveBackground": COLOR.OBSIDIAN,
     //"tab.unfocusedInactiveForeground": "#9d9d9d80",
     //"tab.unfocusedInactiveModifiedBorder": "#3399cc40",
     //"terminal.ansiBlack": "#000000",
@@ -867,3 +916,10 @@ export const COLORS = {
     //"window.activeBorder": null,
     //"window.inactiveBorder": null
   }
+}
+
+export default {
+  LIGHT: generateEditorColors("LIGHT"),
+  DARK: generateEditorColors("DARK"),
+  HC: generateEditorColors("HC"),
+}

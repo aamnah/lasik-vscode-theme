@@ -1,4 +1,9 @@
-export const TOKENS = [
+import MARKDOWN from "./markdown.ts"
+import BASH from "./bash.ts"
+import JSON from "./json.ts"
+import { ColorPaletteType } from "../editorColors.ts"
+
+const TEXT_MARKUP = [
   {
     scope: "emphasis",
     settings: {
@@ -12,6 +17,27 @@ export const TOKENS = [
     },
   },
   {
+    scope: "markup.underline",
+    settings: {
+      fontStyle: "underline",
+    },
+  },
+  {
+    scope: "markup.italic",
+    settings: {
+      fontStyle: "italic",
+    },
+  },
+  {
+    scope: "markup.strikethrough",
+    settings: {
+      fontStyle: "strikethrough",
+    },
+  },
+]
+
+const BASE = [
+  {
     scope: [
       "meta.embedded",
       "source.groovy.embedded",
@@ -22,7 +48,6 @@ export const TOKENS = [
       foreground: "#D4D4D4",
     },
   },
-
   {
     scope: "header",
     settings: {
@@ -32,7 +57,7 @@ export const TOKENS = [
   {
     scope: ["comment"],
     settings: {
-      foreground: "#3C476C",
+      foreground: "#a1add8b3",
       fontStyle: "italic",
     },
   },
@@ -98,12 +123,7 @@ export const TOKENS = [
       foreground: "#F44747",
     },
   },
-  {
-    scope: "markup.underline",
-    settings: {
-      fontStyle: "underline",
-    },
-  },
+
   {
     scope: "markup.bold",
     settings: {
@@ -118,18 +138,7 @@ export const TOKENS = [
       fontStyle: "bold",
     },
   },
-  {
-    scope: "markup.italic",
-    settings: {
-      fontStyle: "italic",
-    },
-  },
-  {
-    scope: "markup.strikethrough",
-    settings: {
-      fontStyle: "strikethrough",
-    },
-  },
+
   {
     scope: "markup.inserted",
     settings: {
@@ -786,3 +795,21 @@ export const TOKENS = [
     },
   },
 ]
+
+function generateTokenColors(type: ColorPaletteType) {
+  // TODO: The colors based on the selected theme need to be updated inside the individual language token files as well
+  return [
+    ...TEXT_MARKUP,
+    ...BASE,
+    ...BASH[type],
+    ...MARKDOWN[type],
+    ...JSON[type],
+  ]
+}
+
+// Export token colors for the three different Lasik variants
+export default {
+  LIGHT: generateTokenColors("LIGHT"),
+  DARK: generateTokenColors("DARK"),
+  HC: generateTokenColors("HC"),
+}

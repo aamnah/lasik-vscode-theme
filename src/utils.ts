@@ -1,4 +1,4 @@
-import { COLORS } from "./colors.ts"
+import EDITOR_COLORS from "./colors.ts"
 // alpha()
 // takes a #ffffff color and an opacity value (0-1.0) and returns hexadecimal #ffffffff value (with opacity in hexadecimal format)
 export function alpha(color: string, opacity: number) {
@@ -8,10 +8,13 @@ export function alpha(color: string, opacity: number) {
 }
 // console.log(alpha("#E95678", 0.9)) // #e95678e6
 
-
 // Takes a hexadecimal color value #ffffffff with transparency and converts it to a transparency-adjusted hex value #ffffff
 // to convert an #ffffffff value to a transparency-adjusted hex, you need to know the background color on top of which the transparency wil be applied
-export function opaqueHex(hex: string, bgColor = COLORS["editor.background"]) {
+export function opaque(
+  hex: string,
+  bgColor = EDITOR_COLORS["DARK"]["editor.background"]
+  // TODO: Fix this bgColor, it needs to be theme aware
+) {
   if (!/^#([0-9A-Fa-f]{8})$/.test(hex)) return hex // Return unchanged if not in #RRGGBBAA format
 
   // Extract RGBA components
@@ -37,8 +40,8 @@ export function opaqueHex(hex: string, bgColor = COLORS["editor.background"]) {
 }
 
 // Example usage:
-// console.log(opaqueHex("#ff000080")) // Semi-transparent red on COLORS["editor.background"] -> #800105
-// console.log(opaqueHex("#0000ff40")) // More transparent blue on editor background -> #010247
-// console.log(opaqueHex("#00ff00ff")) // Fully opaque green -> "#00ff00"
-// console.log(opaqueHex("#ff00ff00")) // Fully transparent -> COLORS["editor.background"]
-// console.log(opaqueHex("#E95678e6")) // #d24e6d
+// console.log(opaque("#ff000080")) // Semi-transparent red on COLORS["editor.background"] -> #800105
+// console.log(opaque("#0000ff40")) // More transparent blue on editor background -> #010247
+// console.log(opaque("#00ff00ff")) // Fully opaque green -> "#00ff00"
+// console.log(opaque("#ff00ff00")) // Fully transparent -> COLORS["editor.background"]
+// console.log(opaque("#E95678e6")) // #d24e6d
