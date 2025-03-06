@@ -1,4 +1,5 @@
 export const PALETTE = {
+  WHITE: "#ffffff",
   OBSIDIAN: "#01030a",
   CORAL: "#E95678",
   LAVENDER: "#B877DB",
@@ -6,7 +7,7 @@ export const PALETTE = {
   TURQUOISE: "#4EC9B0",
   YELLOW: "#F9C859",
   SAGE: "#B5CEA8",
-  PEACH: "#FAB795"
+  PEACH: "#FAB795",
 }
 
 export const COLORS = {
